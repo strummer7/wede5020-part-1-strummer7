@@ -9,7 +9,7 @@
       font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       line-height: 1.7;
       color: #222;
-      background: #f4f4f4;
+      background: linear-gradient(120deg, #f4f4f4 60%, #e8da1a 100%);
       position: relative;
       padding: 20px;
     }
@@ -29,6 +29,8 @@
       margin-left: auto;
       margin-right: auto;
       box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
     }
 
     img:hover {
@@ -50,6 +52,7 @@
       border-radius: 5px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.12);
       background: #fff;
+      border: 1.5px solid #e0e0e0;
     }
 
     td {
@@ -59,6 +62,8 @@
       padding: 5px;         /* Less space between cells */
       box-shadow: 0 2px 8px rgba(0,0,0,0.10);
       background: #fff;
+      border: 1px solid #bbb;
+      border-radius: 6px;
     }
 
     table {
@@ -67,6 +72,8 @@
       margin-bottom: 2rem;
       border-collapse: separate;
       box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      border: 2px solid #1a73e8;
+      border-radius: 10px;
     }
 
     /* Media query for smaller screens */
@@ -165,7 +172,7 @@
       font-size: 1.1rem;
       font-weight: bold;
       color: #fff;
-      background-color: #1a73e8;
+      background: linear-gradient(90deg, #1a73e8 60%, #e81a4e 100%);
       border: none;
       border-radius: 6px;
       padding: 12px 28px;
@@ -193,4 +200,59 @@
       box-shadow: 0 2px 8px rgba(26, 115, 232, 0.22);
       transform: translateY(1px) scale(0.98);
       outline: 2px solid #1565c0;
+    }
+
+    .main-footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 24px 10px 16px 10px;
+      margin-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.10);
+      border-top: 3px solid #1a73e8;
+    }
+
+    .main-footer a.button {
+      margin: 0 8px;
+      padding: 10px 22px;
+      background: linear-gradient(90deg, #1a73e8 60%, #e81a4e 100%);
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .main-footer a.button:hover,
+    .main-footer a.button:focus {
+      background: #0b53c1;
+    }
+
+    /* Add borders to tables and table cells */
+    table {
+      border: 2px solid #b554ee;
+      border-radius: 10px;
+    }
+
+    td {
+      border: 1px solid #bbb;
+      border-radius: 6px;
+    }
+
+    /* Add borders to boxes */
+    .box {
+      border: 1.5px solid #e0e0e0;
+    }
+
+    /* Add border to footer */
+    .main-footer {
+      border-top: 3px solid #e8da1a;
+    }
+
+    /* Add border to navigation bar */
+    .main-nav {
+      border-bottom: 3px solid #e81a4e;
+      border-radius: 8px 8px 0 0;
+      background: linear-gradient(90deg, #1a73e8 60%, #e81a4e 100%);
     }
