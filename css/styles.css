@@ -9,7 +9,7 @@
       font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       line-height: 1.7;
       color: #222;
-      background: linear-gradient(120deg, #f4f4f4 60%, #e8da1a 100%);
+      background: linear-gradient(120deg, #f4f4f4 60%, #e81acd 100%);
       position: relative;
       padding: 20px;
     }
@@ -31,12 +31,12 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.10);
       border: 2px solid #e0e0e0;
       border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     img:hover {
-      transform: scale(1.08);
+      transform: scale(1.08) rotate(-2deg);
       box-shadow: 0 4px 16px rgb(7, 221, 221);
-      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .container {
@@ -45,14 +45,18 @@
       gap: 20px;
     }
 
-    .box {
-      flex: 1 1 300px; /* Grow, shrink, and base width */
-      background: #ddd;
-      padding: 20px;
-      border-radius: 5px;
+    .box, .card {
       box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      border-radius: 10px;
+      padding: 20px;
       background: #fff;
+      margin: 10px;
       border: 1.5px solid #e0e0e0;
+      transition: box-shadow 0.2s;
+    }
+
+    .box:hover, .card:hover {
+      box-shadow: 0 8px 32px rgba(30, 233, 30, 0.18);
     }
 
     td {
