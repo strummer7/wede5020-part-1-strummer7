@@ -6,11 +6,12 @@
     }
 
     body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      padding: 20px;
+      font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #222;
       background: #f4f4f4;
-      position: relative;   /* Added relative positioning */
+      position: relative;
+      padding: 20px;
     }
 
     header, main, footer {
@@ -27,6 +28,13 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+
+    img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 4px 16px rgb(7, 221, 221);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .container {
@@ -40,6 +48,8 @@
       background: #ddd;
       padding: 20px;
       border-radius: 5px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      background: #fff;
     }
 
     td {
@@ -47,6 +57,8 @@
       vertical-align: middle;
       width: 240px;         /* Slightly wider cells */
       padding: 5px;         /* Less space between cells */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      background: #fff;
     }
 
     table {
@@ -54,6 +66,7 @@
       margin-right: auto;
       margin-bottom: 2rem;
       border-collapse: separate;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     }
 
     /* Media query for smaller screens */
@@ -94,4 +107,90 @@
       top: 20px;
       left: 20px;
       z-index: 10;
+    }
+
+    /* Typography styles */
+    h1, h3, h5 {
+      font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: rgb(238, 241, 9);
+      color: #222;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      text-align: center;
+      background-color: rgb(30, 233, 30);
+      color: #222;
+      font-style: italic;
+    }
+
+    h5 {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 30px;
+      color: #555;
+    }
+
+    p, span, strong, a {
+      font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+      margin-right: 15px;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #0b53c1;
+    }
+
+    /* Interactive button styles */
+    .button,
+    button {
+      font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #1a73e8;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 28px;
+      margin: 10px 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(26, 115, 232, 0.10);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+      outline: none;
+      display: inline-block;
+    }
+
+    .button:hover,
+    button:hover,
+    .button:focus,
+    button:focus {
+      background-color: #0b53c1;
+      box-shadow: 0 4px 16px rgba(26, 115, 232, 0.18);
+      transform: translateY(-2px) scale(1.04);
+      outline: 2px solid #bbdefb;
+    }
+
+    .button:active,
+    button:active {
+      background-color: #1565c0;
+      box-shadow: 0 2px 8px rgba(26, 115, 232, 0.22);
+      transform: translateY(1px) scale(0.98);
+      outline: 2px solid #1565c0;
     }
